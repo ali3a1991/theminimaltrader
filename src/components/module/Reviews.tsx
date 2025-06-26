@@ -29,7 +29,7 @@ export default function Reviews() {
       />
       <h2 className="text-3xl font-semibold mb-10">Reviews</h2>
       <div className="grid md:grid-cols-3 gap-6">
-        {users.map((user, idx) => (
+        {users.map((user) => (
           <div
             key={user.name}
             className="relative rounded-2xl p-6 bg-white/5 backdrop-blur-xl border border-white/10 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"

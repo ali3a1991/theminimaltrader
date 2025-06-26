@@ -12,7 +12,7 @@ export default function Author() {
       <div>
         <h2 className="text-2xl font-bold mb-4">Meet the Minimalist</h2>
         <p className="text-gray-300">
-          I'm Pouria Masoumy — creator of the Minimal Trader method.
+          I am Pouria Masoumy — creator of the Minimal Trader method.
           With just $500 and a system, I turned trading into a path to financial freedom.
         </p>
       </div>
