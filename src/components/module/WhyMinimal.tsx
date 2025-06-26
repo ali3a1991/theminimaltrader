@@ -18,14 +18,14 @@ export default function WhyMinimal() {
   ]
 
   return (
-    <section className="py-20 relative overflow-hidden min-h-screen">
+    <section className="py-20 relative min-h-screen">
       <div className="absolute w-[1000px] h-[1000px] rounded-full blur-3xl opacity-30 -z-10 bottom-[-400px] left-[50px]"
         style={{
           background: "radial-gradient(circle, #6abcff 0%, #000 80%, #f59e42 100%)"
         }}
       />
-      <h2 className="text-4xl font-bold mt-20 w-[30%]">Why Minimal Works</h2>
-      <div className='absolute top-[50%] right-[-50px] w-[70%] translate-y-[-50%] '>
+      <h2 className="text-4xl font-bold my-20 w-[30%]">Why Minimal Works</h2>
+      <div className='md:absolute md:top-[50%] md:right-[-50px] md:w-[70%] md:translate-y-[-50%] '>
         <Lightbox>
           <div className="grid md:grid-rows-3 gap-30 p-10">
             {sections.map((item) => (

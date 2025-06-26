@@ -7,7 +7,11 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
       <Head>
         <title>The Minimal Trader</title>
       </Head>
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">{children}</main>
+      <main className="w-screen overflow-x-hidden">
+        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+          {children}
+        </div>
+      </main>
     </>
   )
 }

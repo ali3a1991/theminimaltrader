@@ -3,3 +3,7 @@
 body { 
   @apply bg-[#0d0d0d] text-white; 
 }
+
+html, body {
+  overflow-x: hidden;
+}

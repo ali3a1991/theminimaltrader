@@ -21,8 +21,9 @@ export default function Reviews() {
   ];
 
   return (
-    <section className="py-20 relative overflow-hidden min-h-[calc(100vh / 2)]">
-      <div className="absolute w-[1000px] h-[1000px] rounded-full blur-3xl opacity-30 -z-10 bottom-[-50px] left-[50px]"
+    <section className="py-20 relative min-h-[calc(100vh / 2)]">
+      <div
+        className="absolute w-[600px] md:w-[1000px] h-[600px] md:h-[1000px] rounded-full blur-3xl opacity-30 -z-10 bottom-[-50px] left-1/2 -translate-x-1/2"
         style={{
           background: "radial-gradient(circle, #6abcff 0%, #000 80%, #f59e42 100%)"
         }}
