@@ -6,7 +6,8 @@ export default function About() {
     <section className="relative py-20 px-6 text-white min-h-screen flex items-center justify-center">
       <div className="absolute left-[-20%] top-1/2 transform -translate-y-1/2 w-[150%] h-[150%] opacity-60"
         style={{
-          background: "radial-gradient(circle, #F79F1B 0%, transparent 40%)"
+          background: "radial-gradient(circle, #F79F1B 0%, transparent 40%)",
+          zIndex: -10,
         }}
       ></div>
       <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">

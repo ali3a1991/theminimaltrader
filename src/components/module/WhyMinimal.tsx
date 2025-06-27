@@ -27,7 +27,7 @@ export default function WhyMinimal() {
       <h2 className="text-4xl font-bold my-20 w-[30%]">Why Minimal Works</h2>
       <div className='md:absolute md:top-[50%] md:right-[-50px] md:w-[70%] md:translate-y-[-50%] '>
         <Lightbox>
-          <div className="grid md:grid-rows-3 gap-30 p-10">
+          <div className="grid md:grid-rows-3 gap-30 md:p-10">
             {sections.map((item) => (
               <div key={item.title} >
                 <h3 className="text-xl font-bold mb-2">{item.title}</h3>

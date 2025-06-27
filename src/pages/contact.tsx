@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import BackButton from '@/components/ui/BackButton';
+import React, { useState } from 'react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -36,7 +37,10 @@ export default function Contact() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-white px-4 py-20">
+    <section className="relative min-h-screen flex flex-col gap-4 items-center justify-center text-white px-4 py-20">
+      <div className='self-start'>
+        <BackButton/>
+      </div>
       <div className="absolute w-[900px] h-[900px] rounded-full blur-3xl opacity-30 -z-10 top-[-100px] left-[-300px]"
         style={{
           background: "radial-gradient(circle, #f59e42 0%, #000 60%, #6abcff 100%)"
