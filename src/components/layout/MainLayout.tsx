@@ -1,5 +1,5 @@
-import Head from 'next/head'
 import React from 'react'
+import Head from 'next/head'
 import Header from '../module/Header'
 
 export default function MainLayout({ children }: { children: React.ReactNode }) {
