@@ -4,9 +4,9 @@ import Image from 'next/image'
 export default function About() {
   return (
     <section className="relative py-20 px-6 text-white min-h-screen flex items-center justify-center">
-      <div className="absolute left-[-20%] top-1/2 transform -translate-y-1/2 w-[150%] h-[150%] opacity-60"
+      <div className="absolute left-[-20%] top-1/2 transform -translate-y-1/2 w-[150%] h-[150%] opacity-80"
         style={{
-          background: "radial-gradient(circle, #F79F1B 0%, transparent 40%)",
+          background: "radial-gradient(circle, #F79F1B 0%, transparent 50%)",
           zIndex: -10,
         }}
       />

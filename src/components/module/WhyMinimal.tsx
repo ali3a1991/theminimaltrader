@@ -21,13 +21,19 @@ export default function WhyMinimal() {
     <section className="py-20 relative min-h-screen">
       <div className="absolute w-[1000px] h-[1000px] rounded-full blur-3xl opacity-30 -z-10 bottom-[-400px] left-[50px]"
         style={{
-          background: "radial-gradient(circle, #6abcff 0%, #000 80%, #f59e42 100%)"
+          background: "radial-gradient(circle, #6abcff 0%, transparent 50%)"
         }}
       />
       <h2 className="text-4xl md:text-7xl md:leading-30 font-bold my-20 w-[30%]">Why Minimal Works</h2>
       <div className='md:absolute md:top-[50%] md:right-[-50px] md:w-[70%] md:translate-y-[-50%] neon-border'>
         <Lightbox>
-          <div className="grid md:grid-rows-3 gap-30 md:p-10">
+          <div className="grid md:grid-rows-3 gap-30 md:p-10 relative">
+            <div className="absolute right-[-150%] bottom-[-150%] w-[300%] h-[300%] opacity-50"
+              style={{
+                background: "radial-gradient(circle, #ffffff 0%, transparent 40%)",
+                zIndex: -10,
+              }}
+            />
             {sections.map((item) => (
               <div key={item.title} >
                 <h3 className="text-xl font-bold mb-2">{item.title}</h3>
