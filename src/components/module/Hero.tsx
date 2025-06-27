@@ -7,14 +7,15 @@ export default function Hero() {
 
   return (
     <section className="flex flex-col lg:flex-row items-center justify-between py-20 relative min-h-screen">
-      <div className="absolute w-[900px] h-[900px] rounded-full opacity-70 -z-10 top-[-100px] left-[-300px]"
+      <div className="absolute w-[1200px] h-[1200px] rounded-full opacity-70 -z-10 top-[-500px] left-[-600px]"
         style={{
-          background: "radial-gradient(circle, #f59e42 0%, #000 60%, #6abcff 100%)"
+          background: "radial-gradient(circle, #f59e42 0%, #0d0d0d 60%)"
         }}
       />
-      <div className="absolute w-[900px] h-[900px] rounded-full blur-3xl opacity-70 -z-10 bottom-[-100px] right-[-100px]"
+      <div className='absolute w-[1200px] h-[1200px] rounded-full opacity-70 -z-10 top-[-300px] left-[-600px] border-4'/>
+      <div className="absolute w-[1200px] h-[1200px] rounded-full blur-3xl opacity-80 -z-10 bottom-[-100px] right-[-400px]"
         style={{
-          background: "radial-gradient(circle, #6abcff 0%, #000 60%, #f59e42 100%)"
+          background: "radial-gradient(circle, #6ABCFF 0%, #0d0d0d 60%)"
         }}
       />
       <div className="max-w-xl">
