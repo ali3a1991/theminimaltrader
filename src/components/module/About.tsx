@@ -11,7 +11,7 @@ export default function About() {
         }}
       />
       <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-        <div className="max-w-md p-8 rounded-3xl border border-white/20 backdrop-blur-md bg-white/10 text-left shadow-xl relative overflow-hidden">
+        <div className="max-w-md p-8 rounded-3xl backdrop-blur-md bg-white/10 text-left shadow-xl relative overflow-hidden neon-border">
           <div className="absolute right-[-68%] bottom-[-58%] w-[300%] h-[300%] opacity-50"
             style={{
               background: "radial-gradient(circle, #ffffff 0%, transparent 40%)",

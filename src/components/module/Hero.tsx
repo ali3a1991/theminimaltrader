@@ -25,7 +25,7 @@ export default function Hero() {
         <p className="text-lg mt-4">Trade less. Gain more.</p>
       </div>
       <div className="mt-10 lg:mt-0 text-center">
-        <div className="max-w-[300px]">
+        <div className="max-w-[300px] shadow-xl rounded-md overflow-hidden">
           <Image src="/images/book.jpg" alt="Book" width={819} height={1280} priority />
         </div>
         <button
