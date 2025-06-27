@@ -1,7 +1,10 @@
 import React from 'react'
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 export default function Hero() {
+  const router = useRouter();
+
   return (
     <section className="flex flex-col lg:flex-row items-center justify-between py-20 relative overflow-hidden min-h-screen">
       <div className="absolute w-[900px] h-[900px] rounded-full blur-3xl opacity-30 -z-10 top-[-100px] left-[-100px]"
@@ -22,7 +25,7 @@ export default function Hero() {
       </div>
       <div className="mt-10 lg:mt-0 text-center">
         <Image src="/images/book.png" alt="Book" width={250} height={350} />
-        <button className="mt-4 px-6 py-2 bg-red-600 rounded-md hover:bg-red-700 transition cursor-pointer">
+        <button onClick={() => router.push('/contact')} className="mt-4 px-6 py-2 bg-red-600 rounded-md hover:bg-red-700 transition cursor-pointer">
           ORDER NOW
         </button>
       </div>
