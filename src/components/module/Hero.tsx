@@ -31,7 +31,7 @@ export default function Hero() {
         <button
           style={{ zIndex: 10 }}
           onClick={() => router.push('/order')}
-          className="mt-4 px-6 py-2 bg-red-600 rounded-md hover:bg-red-700 transition cursor-pointer"
+          className="mt-4 px-6 py-2 bg-[#fe5157] rounded-md hover:bg-red-700 transition cursor-pointer"
         >
           ORDER NOW
         </button>

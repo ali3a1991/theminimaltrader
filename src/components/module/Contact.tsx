@@ -1,4 +1,7 @@
 import React from 'react'
+import { Mail, Phone } from 'lucide-react'
+import Instagram from '../ui/Instagram'
+import Facebook from '../ui/Facebook'
 
 export default function Contact() {
   return (
@@ -7,9 +10,19 @@ export default function Contact() {
         <h2 className="text-2xl font-bold mb-4">Contact</h2>
       </div>
       <div className="space-y-2 text-gray-300">
-        <div>Phone: (123) 456-7890</div>
-        <div>Email: hello@reallyminimal.com</div>
-        <div>Social: <a href="#" className="underline">Facebook</a> | <a href="#" className="underline">Instagram</a></div>
+        <div className='flex items-center gap-2'>
+          <Phone/> 
+          <p>(+49) 123456789</p>
+        </div>
+        <div className='flex items-center gap-2'>
+          <Mail/>
+          <p>info@theminimaltrader.com</p>
+        </div>
+        <div className='flex items-center gap-2'>
+          <a href="#" className="underline"><Facebook/></a>
+          | 
+          <a href="#" className="underline"><Instagram /></a>
+        </div>
       </div>
     </section>
   )
