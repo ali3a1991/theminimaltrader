@@ -89,7 +89,7 @@ export default function contact() {
           />
 
           <div className="flex flex-row gap-2 ml-5 items-center">
-            <input onChange={handleChange} type="checkbox" name='isOrder' className='size-4'/>
+            <input onChange={handleChange} type="checkbox" name='isOrder' id='isOrder' className='size-4'/>
             <label htmlFor="isOrder">Order</label>
           </div>
           <button
