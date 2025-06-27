@@ -22,9 +22,9 @@ export default async function handler(
     }
   }
 
-  const { firstName, lastName, email, phoneNumber, message } = body;
+  const { firstName, lastName, email, phoneNumber, postCode, city, street, houseNumber } = body;
 
-  if (!firstName || !lastName || !email || !phoneNumber || !message) {
+  if (!firstName || !lastName || !email || !phoneNumber || !postCode || !city || !street || !houseNumber) {
     return res
       .status(400)
       .json({ success: false, message: "All fields are required." });
@@ -50,8 +50,11 @@ export default async function handler(
         <p><strong>First Name:</strong> ${firstName}</p>
         <p><strong>Last Name:</strong> ${lastName}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phoneNumber}</p>
-        <p><strong>Message:</strong> ${message}</p>
+        <p><strong>Phone Number:</strong> ${phoneNumber}</p>
+        <p><strong>Post Code:</strong> ${postCode}</p>
+        <p><strong>City:</strong> ${city}</p>
+        <p><strong>Street:</strong> ${street}</p>
+        <p><strong>House Number:</strong> ${houseNumber}</p>
       `,
     });
 

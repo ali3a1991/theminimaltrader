@@ -24,7 +24,7 @@ export default function Order() {
     e.preventDefault();
     setStatus('sending');
 
-    const res = await fetch('/api/contact', {
+    const res = await fetch('/api/order', {
       method: 'POST',
       body: JSON.stringify(formData),
     });

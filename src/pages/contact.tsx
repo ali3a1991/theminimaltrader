@@ -6,7 +6,7 @@ export default function Contact() {
     firstName: "",
     lastName: "",
     email: "",
-    phone: "",
+    phoneNumber: "",
     message: "",
   };
 
@@ -88,9 +88,9 @@ export default function Contact() {
           <input
             onChange={handleChange}
             type="tel"
-            name="phone"
+            name="phoneNumber"
             required
-            placeholder="phone"
+            placeholder="phone number"
             className="bg-transparent border border-white/20 rounded-xl px-4 py-3 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500"
           />
 
