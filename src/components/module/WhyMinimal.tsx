@@ -24,7 +24,7 @@ export default function WhyMinimal() {
           background: "radial-gradient(circle, #6abcff 0%, #000 80%, #f59e42 100%)"
         }}
       />
-      <h2 className="text-4xl font-bold my-20 w-[30%]">Why Minimal Works</h2>
+      <h2 className="text-4xl md:text-7xl md:leading-30 font-bold my-20 w-[30%]">Why Minimal Works</h2>
       <div className='md:absolute md:top-[50%] md:right-[-50px] md:w-[70%] md:translate-y-[-50%] '>
         <Lightbox>
           <div className="grid md:grid-rows-3 gap-30 md:p-10">

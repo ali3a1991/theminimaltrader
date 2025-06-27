@@ -34,8 +34,8 @@ export default function About() {
           <Image
             src="/images/minimal-trader-phone.png"
             alt="Minimal Trader Book on Phone"
-            width={1000}
-            height={400}
+            width={539}
+            height={360}
             className="rounded-xl shadow-2xl"
           />
         </div>
