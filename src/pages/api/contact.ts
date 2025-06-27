@@ -22,9 +22,9 @@ export default async function handler(
     }
   }
 
-  const { firstName, lastName, email, phone, isOrder } = body;
+  const { firstName, lastName, email, phone, message } = body;
 
-  if (!firstName || !lastName || !email || !phone) {
+  if (!firstName || !lastName || !email || !phone || !message) {
     return res
       .status(400)
       .json({ success: false, message: "All fields are required." });
@@ -46,11 +46,12 @@ export default async function handler(
       to: process.env.SITE_RECEIVER,
       subject: "New form from website",
       html: `
-        <h2>New Contact Form${isOrder && " (order)"}</h2>
+        <h2>New Contact Form</h2>
         <p><strong>First Name:</strong> ${firstName}</p>
         <p><strong>Last Name:</strong> ${lastName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Message:</strong> ${message}</p>
       `,
     });
 
