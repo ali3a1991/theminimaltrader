@@ -17,7 +17,7 @@ export default function Author() {
         </p>
       </div>
       <div className="text-center">
-        <Image src="/images/author.jpg" alt="Author" width={250} height={250} className="rounded-full" />
+        <Image src="/images/author.jpg" alt="Author" width={300} height={300} className="rounded-full" />
       </div>
     </section>
   )

@@ -7,15 +7,15 @@ export default function Hero() {
 
   return (
     <section className="flex flex-col lg:flex-row items-center justify-between py-20 relative min-h-screen">
-      <div className="absolute w-[1200px] h-[1200px] rounded-full opacity-70 -z-10 top-[-500px] left-[-600px]"
+      <div className="absolute w-[1200px] h-[1200px] rounded-full -z-10 top-[-500px] left-[-600px]"
         style={{
-          background: "radial-gradient(circle, #f59e42 0%, #0d0d0d 60%)"
+          background: "radial-gradient(circle, #F8A01B 0%, #0d0d0d 60%)"
         }}
       />
       <div className='absolute w-[1200px] h-[1200px] rounded-full opacity-70 -z-10 top-[-300px] left-[-600px] border-4'/>
-      <div className="absolute w-[1200px] h-[1200px] rounded-full blur-3xl opacity-80 -z-10 bottom-[-100px] right-[-400px]"
+      <div className="absolute w-[1200px] h-[1200px] rounded-full blur-3xl -z-10 bottom-[-100px] right-[-400px]"
         style={{
-          background: "radial-gradient(circle, #6ABCFF 0%, #0d0d0d 60%)"
+          background: "radial-gradient(circle, #67B7F8 0%, #0d0d0d 60%)"
         }}
       />
       <div className="max-w-xl">
@@ -25,7 +25,7 @@ export default function Hero() {
         <p className="text-lg mt-4">Trade less. Gain more.</p>
       </div>
       <div className="mt-10 lg:mt-0 text-center">
-        <Image src="/images/book.png" alt="Book" width={250} height={350} />
+        <Image src="/images/book.jpg" alt="Book" width={300} height={300} />
         <button
           style={{ zIndex: 10 }}
           onClick={() => router.push('/contact')}

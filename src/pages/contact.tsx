@@ -99,7 +99,7 @@ export default function Contact() {
           <button
             type="button"
             onClick={handleSubmit}
-            className="mt-4 px-6 py-3 bg-red-600 rounded-md hover:bg-red-700 text-white font-semibold hover:scale-105 transition cursor-pointer"
+            className="mt-4 px-6 py-3 bg-[#fe5157] rounded-md hover:bg-red-700 text-white font-semibold hover:scale-105 transition cursor-pointer"
           >
             Send
           </button>
