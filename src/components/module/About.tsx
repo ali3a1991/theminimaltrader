@@ -37,6 +37,7 @@ export default function About() {
             width={539}
             height={360}
             className="rounded-xl shadow-2xl"
+            priority
           />
         </div>
       </div>
