@@ -1,8 +1,18 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false)
+  const router = useRouter()
+
+  // Navigation items
+  const navItams = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Contact', href: '/contact' },
+    { name: 'Blog', href: '/blog' },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,15 +29,28 @@ export default function Header() {
   }, [])
 
   // Apply styles based on scroll state
-  const headerClasses = `flex items-center w-screen p-4 fixed top-0 z-50${isOpen && ' shadow-lg backdrop-blur-md transition-all duration-300'}`
+  const headerClasses = `flex items-baseline justify-between w-screen p-4 fixed top-0${isOpen && ' shadow-lg backdrop-blur-lg transition-all duration-300'}`
   return (
-    <div className={headerClasses}>
+    <div className={headerClasses} style={{ zIndex: 1000 }}>
+
       <div className='flex w-[100%] max-w-7xl mx-auto'>
         <div className="flex items-center gap-2">
           <Image src={'/logo-light.svg'} alt='Logo' width={20} height={20}/>
           <h1 className="text-2xl font-bold logo">The Minimal Trader</h1>
         </div>
       </div>
+
+      <nav>
+        <ul className="flex items-center gap-6 p-4 md:pr-10">
+          {navItams.map((item) => (
+            <li key={item.name}>
+              <button className="font-medium hover:underline transition-colors duration-200 cursor-pointer" onClick={() => router.push(item.href)} style={router.pathname === item.href ? { color: '#f59e42' } : {} }>
+                {item.name}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </div>
   )
 }
