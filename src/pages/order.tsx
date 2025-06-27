@@ -49,7 +49,7 @@ export default function Order() {
         />
       <div className='flex flex-col md:flex-row items-center justify-between gap-15'>
         <p className="w-[100%] md:w-[50%]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
         <div className="relative z-10 w-full max-w-2xl p-10 rounded-3xl backdrop-blur-xl bg-white/5 border border-white/20 shadow-[0_0_40px_rgba(255,255,255,0.1)]">
           <h2 className="text-3xl font-bold mb-6 text-center">Order</h2>
